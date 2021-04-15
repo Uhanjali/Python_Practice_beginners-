@@ -1,0 +1,18 @@
+string = input("Please enter your string:")
+print()
+print(string.casefold())
+print("-" * 10)
+q = string[::-1].casefold()
+print(q)
+print("-" * 10)
+if string.casefold() == q: # string is case sensitive make sure they are either in upper case or lower case,here I have choosen lower case
+    print("The given string {} is Palindrome".format(string))
+else:
+    print("The given string {} is not a palindrome".format(string))
+# Here we can neglect few lines to decrease the code length line 2,3,6,7 are not mandatory by deleting those,the below is the precise code
+# string = input("Please enter your string:")
+# q = string[::-1].casefold()
+# if string.casefold() == q:
+#     print("The given string {} is Palindrome".format(string))
+# else:
+#     print("The given string {} is not a palindrome".format(string))  
